@@ -17,6 +17,15 @@ if account in PASSWORDS:
 else:
     print('There is no account named ' + account)
 
+
+text = pyperclip.paste()
+# Separate lines and add stars.
+lines = text.split('\n')
+for i in range(len(lines)): # loop through all indexes for "lines" list
+    lines[i] = '* ' + lines[i] # add star to each string in "lines" list
+text = '\n'.join(lines)
+pyperclip.copy(text)
+print(text)
 '''
 just like this:
 PS F:\Github\Praxis> & E:/python311/python.exe f:/Github/Psraxis/learning/python/7_account.py email
@@ -26,5 +35,5 @@ Password for email copied to clipboard.
 '''
 
 '''
-其实就是python.exe后面的参数
+其实就是python.exe后面的参数为shell的参数 但是这里可有多个参数 只有第一个会起作用
 '''
