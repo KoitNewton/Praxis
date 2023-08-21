@@ -6,7 +6,7 @@ int main(){
     int dividend = 0;
     cin >> dividend;  // your dividend or the denominator
     int half = dividend/2 +1;
-    cout << half<<endl;
+    //cout << half<<endl; 
     for(int i=1; i<= half; i++){
         
         if((dividend%i)==0){
