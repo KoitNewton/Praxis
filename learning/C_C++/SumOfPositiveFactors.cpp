@@ -2,6 +2,7 @@
 using namespace std;
 
 int main(){
+    
     int sum = 0;
     int dividend = 0;
     cin >> dividend;  // your dividend or the denominator
